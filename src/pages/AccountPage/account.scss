@@ -1,0 +1,150 @@
+// Import the main.scss file to get the variable definitions
+@import '../../main.scss';
+
+.account-page {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  font-family: 'Spartan', sans-serif;
+
+  .account-message {
+    color: red;
+    margin-bottom: 10px;
+  }
+
+  .account-content {
+    display: flex;
+    width: 100%;
+    max-width: 800px;
+    background: $whiteColor;
+    border: 1px solid $borderColor;
+    border-radius: 8px;
+    overflow: hidden;
+  }
+
+  .account-sidebar {
+    flex: 1;
+    padding: 20px;
+    background: $grayBg;
+    border-right: 1px solid $borderColor;
+
+    .profile-picture {
+      text-align: center;
+      margin-bottom: 20px;
+
+      img {
+        width: 100px;
+        height: 100px;
+        border-radius: 50%;
+      }
+
+      .upload-button {
+        margin-top: 10px;
+        padding: 5px 10px;
+        background: $primaryColor;
+        color: $whiteColor;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+
+        &:hover {
+          background: $hoverColor;
+        }
+      }
+    }
+
+    .identity-verification {
+      margin-top: 20px;
+
+      h3 {
+        margin-bottom: 10px;
+      }
+
+      p {
+        margin: 5px 0;
+      }
+    }
+  }
+
+  .account-main {
+    flex: 2;
+    padding: 20px;
+
+    .account-header {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      margin-bottom: 20px;
+
+      h1 {
+        margin: 0 0 10px 0;
+      }
+
+      .edit-button {
+        padding: 5px 10px;
+        background: $primaryColor;
+        color: $whiteColor;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+
+        &:hover {
+          background: $hoverColor;
+        }
+      }
+    }
+
+    .account-details {
+      margin-top: 20px;
+
+      p {
+        font-size: 16px;
+
+        .star-icon {
+          color: gold;
+        }
+      }
+
+      h3 {
+        margin-top: 20px;
+      }
+    }
+  }
+
+  .edit-profile-modal {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: $whiteColor;
+    padding: 20px;
+    border: 1px solid $borderColor;
+    border-radius: 8px;
+    box-shadow: $boxShadow;
+    z-index: 1000;
+
+    input {
+      display: block;
+      width: 100%;
+      padding: 10px;
+      margin: 10px 0;
+      border: 1px solid $borderColor;
+      border-radius: 4px;
+    }
+
+    button {
+      padding: 10px 20px;
+      margin-top: 10px;
+      background: $primaryColor;
+      color: $whiteColor;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+
+      &:hover {
+        background: $hoverColor;
+      }
+    }
+  }
+}

@@ -1,17 +1,16 @@
-
-import AppRouter from './Components/AppRouter';
-import Footer from './Components/Footer';
-import Navbar from './Components/Navbar/Navbar';
-import './main.scss';
+import AppRouter from "./Components/AppRouter";
+import Footer from "./Components/Footer";
+import Navbar from "./Components/Navbar/Navbar";
+import "./main.scss";
 
 const App = () => {
-    return (
+  return (
     <>
-        <Navbar/>
-        <AppRouter/>
-        <Footer/>
+      <Navbar />
+      <AppRouter />
+      <Footer />
     </>
-        )
-}
+  );
+};
 
-export default App
+export default App;

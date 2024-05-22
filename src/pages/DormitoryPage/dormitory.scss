@@ -1,0 +1,133 @@
+.dormitory {
+    &-container {
+      max-width: 1200px;
+      margin: 160px auto 100px;
+      padding: 0 20px;
+    }
+  
+    &-wrapper {
+      display: grid;
+      grid-template-columns: 1fr 320px;
+      gap: 40px;
+    }
+  
+    &-page {
+      padding: 20px;
+      text-align: center;
+  
+      h1 {
+        margin-bottom: 20px;
+        font-size: 2.5em;
+        color: #333;
+      }
+    }
+  
+    &-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+      gap: 24px 40px;
+    }
+  
+    &-card {
+      border: 1px solid #ddd;
+      border-radius: 8px;
+      overflow: hidden;
+      text-align: left;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      transition: transform 0.3s, box-shadow 0.3s;
+      background-color: #fff;
+  
+      &:hover {
+        transform: scale(1.05);
+        box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+      }
+  
+      img {
+        width: 100%;
+        height: 200px;
+        object-fit: cover;
+      }
+  
+      h2 {
+        margin: 16px 10px 8px;
+        font-size: 1.5em;
+        color: #222;
+      }
+  
+      p {
+        margin: 8px 10px;
+        font-size: 1em;
+        color: #555;
+        line-height: 1.5;
+      }
+  
+      button {
+        margin: 16px 10px;
+        padding: 12px 20px;
+        background-color:hsl(4, 92%, 42%);
+        color: #fff;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+        transition: background-color 0.3s, box-shadow 0.3s;
+  
+        &:hover {
+          background-color: #0056b3;
+          box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+      }
+    }
+  
+    &-search {
+      margin-bottom: 40px;
+  
+      &-title {
+        text-align: left;
+        font-size: 1.125em;
+        line-height: 1.5em;
+        font-weight: 700;
+        margin-bottom: 16px;
+        color: #333;
+      }
+  
+      &-wrapper {
+        position: relative;
+  
+        svg {
+          font-size: 24px;
+          position: absolute;
+          top: 50%;
+          right: 28px;
+          transform: translateY(-50%);
+        }
+      }
+  
+      &-input {
+        width: 100%;
+        padding: 16px 28px;
+        outline: none;
+        border: 1px solid #dfdfdf;
+        border-radius: 48px;
+        font-size: 1em;
+      }
+    }
+  
+    &-sorting {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+  
+      &-checkbox {
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        gap: 12px;
+  
+        input[type="checkbox"] {
+          width: 18px;
+          height: 18px;
+        }
+      }
+    }
+  }
+  

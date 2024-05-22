@@ -1,0 +1,16 @@
+{
+  "ExpandedNodes": [
+    "",
+    "\\public",
+    "\\src",
+    "\\src\\pages",
+    "\\src\\pages\\DormitoryPage",
+    "\\src\\pages\\HomePage\\components",
+    "\\src\\pages\\HomePage\\components\\Search",
+    "\\src\\pages\\LoginPage",
+    "\\src\\services",
+    "\\src\\utils"
+  ],
+  "SelectedNode": "\\src\\pages\\DormitoryPage\\index.jsx",
+  "PreviewInSolutionExplorer": false
+}

@@ -1,0 +1,26 @@
+[
+	{
+		"id": 1,
+		"name": "Dormitory A",
+		"location": "Location A",
+		"price": "$500",
+		"images": [ "nazarbayev.jpg" ],
+		"amenities": [ "Wi-Fi", "Breakfast", "Gym" ]
+	},
+	{
+		"id": 2,
+		"name": "Dormitory B",
+		"location": "Location B",
+		"price": "$450",
+		"images": [ "paris.jpg" ],
+		"amenities": [ "Wi-Fi", "Parking" ]
+	},
+	{
+		"id": 3,
+		"name": "Dormitory C",
+		"location": "Location C",
+		"price": "$600",
+		"images": [ "sdu.png" ],
+		"amenities": [ "Wi-Fi", "Breakfast", "Pool" ]
+	}
+]
